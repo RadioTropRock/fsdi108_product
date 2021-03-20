@@ -11,8 +11,8 @@ class Product extends Component {
 
         <label className="description">Product Description here</label>
 
-        <label>$ Total</label>
-        <label>$ Price</label>
+        <label className="total">$ Total</label>
+        <label className="price">$ Price</label>
 
         <QuantityPicker></QuantityPicker>
       </div>

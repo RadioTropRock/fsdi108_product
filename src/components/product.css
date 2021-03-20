@@ -10,5 +10,14 @@
 
 .description {
     border: 1px solid red;
-    font-weight: 800;
+    font-weight: 700;
+
+}
+
+.total {
+    border: 2px solid greenyellow;
+}
+
+.price {
+    border: 2px solid purple;
 }
