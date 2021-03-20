@@ -1,0 +1,14 @@
+
+
+.product {
+    border: 1px solid blue;
+    display: inline-block;
+    width: 250px;
+    height: 350px;
+
+}
+
+.description {
+    border: 1px solid red;
+    font-weight: 800;
+}
