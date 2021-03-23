@@ -1,13 +1,10 @@
 .footer-cr {
-    position: absolute;
-    bottom: 80px;
-    font-weight: bold;
+ font-weight: bold;
     text-align: center;
     color: red;
 }
 
 .footer-name {
-    position: absolute;
     bottom: 0;
     font-weight: bold;
     color: blue;

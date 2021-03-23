@@ -5,19 +5,29 @@
     display: inline-block;
     width: 250px;
     height: 350px;
+    margin-right: 15px;
+    margin-bottom: 20px;
 
 }
 
 .description {
     border: 1px solid red;
     font-weight: 700;
+    background: aqua;
 
 }
 
 .total {
     border: 2px solid greenyellow;
+    background-color: rgb(255, 0, 212);
 }
 
 .price {
     border: 2px solid purple;
+    background-color: rgb(43, 255, 0);
+}
+
+.product .product-image {
+    width: 230px;
+    height: 200px;
 }
