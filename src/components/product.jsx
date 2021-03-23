@@ -11,7 +11,7 @@ class Product extends Component {
 
       
         <label>{this.props.data.title}</label>
-        d
+        
         <label>Total: {this.props.data.price}</label>
         <label>Unit Price: {this.props.data.price}</label>
         
