@@ -15,7 +15,7 @@ class Catalog extends Component {
                     This is our amazing catalog with {this.state.catalog.length} products
                 </h3>
 
-                {this.state.catalog.map((p) => ( <Product data={p}></Product> ))}
+                {this.state.catalog.map((p) => ( <Product key={p.id} data={p}></Product> ))}
 
             </div>
          );

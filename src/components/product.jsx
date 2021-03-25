@@ -7,13 +7,13 @@ class Product extends Component {
   render() {
     return (
       <div className="product">
-        <img className="product-image"  src = {"/images/products/" + this.props.data.image}></img>
+        <img className="product-image"  src = {"/images/products/" + this.props.data.image}alt="Product"></img>
 
       
         <label>{this.props.data.title}</label>
         
-        <label>Total: {this.props.data.price}</label>
-        <label>Unit Price: {this.props.data.price}</label>
+        <label>Total: ${this.props.data.price}</label>
+        <label>Unit Price: ${this.props.data.price}</label>
         
 
         <QuantityPicker></QuantityPicker>
