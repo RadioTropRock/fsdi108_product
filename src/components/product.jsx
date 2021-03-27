@@ -3,7 +3,9 @@ import QuantityPicker from "./quantityPicker";
 import "./product.css";
 
 class Product extends Component {
-  state = {};
+  state = {
+    quantity: this.props.data.minimum || 1,
+  };
   render() {
     return (
       <div className="product">
@@ -11,14 +13,29 @@ class Product extends Component {
 
       
         <label>{this.props.data.title}</label>
-        
-        <label>Total: ${this.props.data.price}</label>
-        <label>Unit Price: ${this.props.data.price}</label>
-        
+       
+          <label>Total: ${(this.props.data.price * this.state.quantity).toFixed(2)}</label>
+          <label>Unit Price: ${this.props.data.price.toFixed(2)}</label>
+       
 
-        <QuantityPicker></QuantityPicker>
+        <QuantityPicker minimum ={this.props.data.minimum || 1}
+        onValueChange ={this.handleQuantityChange}></QuantityPicker>
+
+        <button onClick = {this.handleAddToCart} className="btn btn-sm btn-secondary"> Add to Cart </button>
       </div>
     );
+  }
+handleQuantityChange = (qnty)  => {
+  console.log("qp call the function" + qnty);
+  this.setState({ quantity: qnty});
+};
+
+  handleAddToCart = () => {
+    console.log ("added");
+  }
+  calculateTotal = () => {
+    var total = this.props.data.price * this.state.quantity;
+    return total.toFixed(2);
   }
 }
 
