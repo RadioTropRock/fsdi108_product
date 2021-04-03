@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { connect } from "react-redux";
 import { Link } from 'react-router-dom';
 
 class NavBar extends Component {
@@ -26,10 +26,28 @@ class NavBar extends Component {
                   <Link className="nav-link disabled" to="/" tabIndex="-1" aria-disabled="true">Disabled</Link>
                 </li>
               </ul>
+
+              <div className="form-inline my-2 my-lg-0">
+            <Link className="btn btn-info my-2 my-sm-0" to="/cart">
+              <i aria-hidden="true"  ></i>
+              View Cart
+              <span className="badge badge-primary cart-badge">
+              {this.props.cart.length}
+              </span>
+            </Link>
+          </div>
+
+
             </div>
           </nav>
         );
     }
 }
  
-export default NavBar;
+const mapStateToProps = (state) => {
+  return {
+    cart: state
+  };
+};
+
+export default connect( mapStateToProps ,null) (NavBar);

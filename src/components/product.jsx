@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import QuantityPicker from "./quantityPicker";
 import "./product.css";
+import { connect } from "react-redux";
+import { addProductToCart } from "../store/actions/actions";
 
 class Product extends Component {
   state = {
@@ -25,18 +27,28 @@ class Product extends Component {
       </div>
     );
   }
-handleQuantityChange = (qnty)  => {
-  console.log("qp call the function" + qnty);
-  this.setState({ quantity: qnty});
-};
 
-  handleAddToCart = () => {
-    console.log ("added");
-  }
   calculateTotal = () => {
     var total = this.props.data.price * this.state.quantity;
     return total.toFixed(2);
+  };
+
+
+
+handleQuantityChange = (qnty)  => {
+  console.log("Quantity changed to" + qnty);
+  this.setState({ quantity: qnty});
+};
+
+handleAddToCart = () => {
+  console.log ("add 2 cart");
+  var prodInCart ={
+    product: this.props.data,
+    quantity: this.state.quantity
   }
+  this.props.addProductToCart( prodInCart );
+};
 }
 
-export default Product;  
+export default connect (null, { addProductToCart }) (Product);  
+
