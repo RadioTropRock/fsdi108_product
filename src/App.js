@@ -8,7 +8,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
-
+import Cart from "./components/cart";
 function App() {
   return (
     <BrowserRouter>
@@ -20,6 +20,7 @@ function App() {
         <Route path="/home" exact component={Home}></Route>
         <Route path="/catalog" exact component={Catalog}></Route>
         <Route path="/about" exact component={About}></Route>
+        <Route path="/cart" exact component ={Cart}></Route>
       </Switch>
 
       <Footer></Footer>
