@@ -13,20 +13,20 @@ class About extends Component {
             <div className="about-page">
             <div className="jumbotron">
   <h1 className="display-4">Eric Babin</h1>
-  <p className="lead">We love to overcharge you for vegetables via the internet</p>
+  <p className="lead">You want to be a "cool kid" don't you?</p>
   <hr className="my-4"></hr>
-  <p>We will do our best to get them to you before they rot, however, we can't promise you they will.</p>
+  <p>If so, you should buy a bunch of our shirts. That is the only way you will be "cool".</p>
   <p className="lead">
-      <p>If you have any problems do not contact us. You should have known better than to buy fresh items on the internet.</p>
+      <p>If you have any problems trying to buy this stuff just send us the money and then we'll try to figure it out.</p>
 
       {
                 this.state.infoVisible ? 
                 (
                 <div>
                     <p></p>
-                    <label>Why did you click the button?</label>
+                    <label>Can you not read? It said DO NOT click the button!?</label>
                     <p></p>
-                    <label>I told you not to! </label>
+                    <label>Just for that, you should send us even MORE money!  </label>
                     <p></p>
                 </div>
                 ) 
