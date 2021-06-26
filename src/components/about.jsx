@@ -48,5 +48,5 @@ class About extends Component {
         this.setState({ infoVisible: true});
     };
 }
- 
+
 export default About;

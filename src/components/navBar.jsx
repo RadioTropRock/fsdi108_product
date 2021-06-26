@@ -7,7 +7,7 @@ class NavBar extends Component {
     render() { 
         return (  
             <nav className="navbar navbar-expand-lg navbar-dark " style={{backgroundColor: "rgb(22, 84, 156)"}}>
-            <Link className="navbar-brand" to="/">Navbar</Link>
+            <Link className="navbar-brand" to="/">Menu</Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
@@ -17,7 +17,7 @@ class NavBar extends Component {
                   <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/catalog">Catalog</Link>
+                  <Link className="nav-link" to="/catalog">Store</Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/about">About</Link>
