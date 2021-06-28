@@ -13,7 +13,7 @@ class About extends Component {
             <div className="about-page">
             <div className="jumbotron">
   <h1 className="display-4">Eric Babin</h1>
-  <p className="lead">You want to be a "cool kid" don't you?</p>
+  <p className="lead">You want to be a "cool kid" RIGHT?</p>
   <hr className="my-4"></hr>
   <p>If so, you should buy a bunch of our shirts. That is the only way you will be "cool".</p>
   <p className="lead">
